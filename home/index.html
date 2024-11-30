@@ -1,7 +1,19 @@
 <link rel="stylesheet" href="index.css">
-<div class="card">
-This website is used as an email host for the butchers family!
+<div class="button-container">
+  <button class="popover-trigger" popovertarget="popup">https://the-butchers.co.uk/</button>
 </div>
-
-<a href="https://status.john-butcher.com/" target="_blank">Click For Website Status</a>
-
+<dialog id="popup" popover="auto">
+  <button class="close-button" popovertarget="popup" popovertargetaction="hide" aria-label="Close popup">×</button>
+  <div class="popover-content">
+    <center>
+    <p>Info</p>
+    </center>
+    <p>The Butchers.co.uk is a private domain to manage emails. If you would like more info, email me at John@the-butchers.co.uk </p>
+   <p>The status of this domain and other sites can be found bellow or at https://status.john-butcher.com</p>
+  </div>
+</dialog>
+<center>
+<iframe src="https://status.john-butcher.com/" width="50%" height="600">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</center>
